@@ -16,22 +16,24 @@ class _SplashPageState extends State<SplashPage> {
     Future.delayed(Duration(seconds: 3), () {
       Navigator.of(
         context,
-      ).pushReplacement(_createRoute());
+      ).pushReplacement(_fadeRoute());
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Hero(
-        tag: 'splash-img',
-        child: Image.asset('assets/images/splash.png'),
+    return Scaffold(
+      body: Center(
+        child: Hero(
+          tag: 'splash-img',
+          child: Image.asset('assets/images/splash.png'),
+        ),
       ),
     );
   }
 }
 
-Route _createRoute() {
+Route _fadeRoute() {
   return PageRouteBuilder(
     pageBuilder: (context, animation, secondaryAnimation) => LoginPage(),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
