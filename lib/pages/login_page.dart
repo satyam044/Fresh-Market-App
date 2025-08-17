@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fresh_market_app/pages/home_page.dart';
 import 'package:fresh_market_app/themes/theme_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -53,7 +54,9 @@ class LoginPage extends StatelessWidget {
                               Provider.of<ThemeProvider>(context).themeData.primaryColor,
                             ),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomePage()));
+                          },
                           child: const Text(
                             'Sign In',
                             style: TextStyle(
