@@ -53,7 +53,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       color: Color.fromARGB(133, 200, 105, 71),
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(15),
                     ),
                     child: TextField(
                       decoration: InputDecoration(
