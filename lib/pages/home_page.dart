@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(kToolbarHeight + 40),
+        preferredSize: Size.fromHeight(kToolbarHeight + 100),
         child: AppBarWidget(),
       ),
       body: const Center(child: Text("Home Page Content")),
