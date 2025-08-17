@@ -16,7 +16,30 @@ class HomePage extends StatelessWidget {
       body: Container(
         child: Padding(
           padding: const EdgeInsets.all(18.0),
-          child: BannerWidget(),
+          child: Column(
+            children: [
+              BannerWidget(),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('Categories', style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),),
+                  Row(
+                    children: [
+                      Column(
+                        children: [
+                          Image.asset('assets/images/banner.jpg', height: 80, width: 80, fit: BoxFit.contain,),
+                          Text('Fruits'),
+                        ],
+                      )
+                    ],
+                  )
+                ],
+              )
+            ],
+          ) 
         ),
       ),
     );

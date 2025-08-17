@@ -58,7 +58,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
                     child: TextField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
-                        hintText: "Search Your Groceries",
+                        hintText: "Search Your Grocery",
                         hintStyle: TextStyle(
                           color: Color.fromARGB(192, 255, 255, 255),
                           fontSize: 20,
