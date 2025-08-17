@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fresh_market_app/themes/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -12,7 +14,7 @@ class LoginPage extends StatelessWidget {
           children: [
             Hero(
               tag: 'splash-img',
-              child: Image.asset('assets/images/splash.png', height: 250),
+              child: Image.asset('assets/images/splash.png', height: 400),
             ),
             const SizedBox(height: 20),
             Column(
@@ -48,14 +50,14 @@ class LoginPage extends StatelessWidget {
                               const EdgeInsets.symmetric(vertical: 10),
                             ),
                             backgroundColor: WidgetStateProperty.all(
-                              const Color.fromARGB(255, 72, 136, 232),
+                              Provider.of<ThemeProvider>(context).themeData.primaryColor,
                             ),
                           ),
                           onPressed: () {},
                           child: const Text(
                             'Sign In',
                             style: TextStyle(
-                              color: Colors.black,
+                              color: Colors.white,
                               fontSize: 26,
                             ),
                           ),
@@ -84,7 +86,7 @@ class LoginPage extends StatelessWidget {
           height: 60,
           alignment: Alignment.center,
           decoration: BoxDecoration(
-            color: const Color.fromARGB(133, 200, 105, 71),
+            border: Border.all(color: Provider.of<ThemeProvider>(context).themeData.primaryColor),
             borderRadius: BorderRadius.circular(10),
           ),
           child: TextField(
@@ -94,7 +96,7 @@ class LoginPage extends StatelessWidget {
               border: InputBorder.none,
               hintText: hint,
               hintStyle: const TextStyle(
-                color: Color.fromARGB(192, 255, 255, 255),
+                color: Color.fromARGB(192, 104, 94, 94),
                 fontSize: 20,
               ),
             ),

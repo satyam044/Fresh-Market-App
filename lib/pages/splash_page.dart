@@ -14,9 +14,7 @@ class _SplashPageState extends State<SplashPage> {
     super.initState();
 
     Future.delayed(Duration(seconds: 3), () {
-      Navigator.of(
-        context,
-      ).pushReplacement(_fadeRoute());
+      Navigator.of(context).pushReplacement(_fadeRoute());
     });
   }
 
@@ -24,9 +22,27 @@ class _SplashPageState extends State<SplashPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Hero(
-          tag: 'splash-img',
-          child: Image.asset('assets/images/splash.png'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Fresh-Market', style: TextStyle(
+              fontSize: 40,
+              fontWeight: FontWeight.bold
+            ),),
+            Hero(
+              tag: 'splash-img',
+              child: Image.asset('assets/images/splash.png'),
+            ),
+            SizedBox(height: 50,),
+            Text('Grocery at your', style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+            ),),
+            Text('Doorstep', style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.w500,
+            ),),
+          ],
         ),
       ),
     );
@@ -37,11 +53,8 @@ Route _fadeRoute() {
   return PageRouteBuilder(
     pageBuilder: (context, animation, secondaryAnimation) => LoginPage(),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      return FadeTransition(
-        opacity: animation,
-        child: child,
-      );
+      return FadeTransition(opacity: animation, child: child);
     },
-    transitionDuration: Duration(milliseconds: 800), 
+    transitionDuration: Duration(milliseconds: 800),
   );
 }
