@@ -21,15 +21,20 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
       ),
       centerTitle: true,
       actions: [
-        Padding(
-          padding: const EdgeInsets.only(right: 10),
-          child: Container(
-            padding: const EdgeInsets.all(4),
-            decoration: BoxDecoration(
-              border: Border.all(width: 2, color: Colors.black),
-              borderRadius: const BorderRadius.all(Radius.circular(50)),
+        GestureDetector(
+          onTap: () {
+            
+          },
+          child: Padding(
+            padding: const EdgeInsets.only(right: 14),
+            child: Container(
+              padding: const EdgeInsets.all(4),
+              decoration: BoxDecoration(
+                border: Border.all(width: 2, color: Colors.black),
+                borderRadius: const BorderRadius.all(Radius.circular(50)),
+              ),
+              child: const Icon(Icons.person_outline, size: 24),
             ),
-            child: const Icon(Icons.person_outline, size: 30),
           ),
         ),
       ],

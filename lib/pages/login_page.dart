@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:fresh_market_app/pages/home_page.dart';
 import 'package:fresh_market_app/themes/theme_provider.dart';
 import 'package:fresh_market_app/widgets/UIhelper.dart';
+import 'package:fresh_market_app/widgets/bottom_nav_bar.dart';
 import 'package:provider/provider.dart';
 
 class LoginPage extends StatelessWidget {
@@ -63,7 +63,7 @@ class LoginPage extends StatelessWidget {
                             Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => HomePage(),
+                                builder: (context) => BottomNavBar(),
                               ),
                             );
                           },
