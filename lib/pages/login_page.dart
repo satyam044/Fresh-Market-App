@@ -16,7 +16,7 @@ class LoginPage extends StatelessWidget {
           children: [
             Hero(
               tag: 'splash-img',
-              child: Image.asset('assets/images/splash.png', height: 400),
+              child: UIhelper.customImg(img: 'splash.png', height: 400),
             ),
             const SizedBox(height: 20),
             Column(

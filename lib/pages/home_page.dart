@@ -33,8 +33,8 @@ class HomePage extends StatelessWidget {
                     children: [
                       Column(
                         children: [
-                          Image.asset(
-                            'assets/images/banner.jpg',
+                          UIhelper.customImg(
+                            img: 'banner.jpg',
                             height: 80,
                             width: 80,
                             fit: BoxFit.contain,
