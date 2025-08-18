@@ -7,11 +7,11 @@ class CategoriesWidget extends StatelessWidget {
   CategoriesWidget({super.key});
 
   final groceryItems = [
-    {"img": "vegges.png", "text": "Fruits"},
-    {"img": "banner.jpg", "text": "Vegetables"},
-    {"img": "banner.jpg", "text": "Meat"},
-    {"img": "banner.jpg", "text": "Bakery"},
-    {"img": "banner.jpg", "text": "Dairy"},
+    {"img": "fruits.png", "text": "Fruits"},
+    {"img": "veggies.png", "text": "Veggies"},
+    {"img": "meat.png", "text": "Meat"},
+    {"img": "bakery.png", "text": "Bakery"},
+    {"img": "dairy.png", "text": "Dairy"},
   ];
 
   @override
