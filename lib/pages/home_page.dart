@@ -20,6 +20,7 @@ class HomePage extends StatelessWidget {
           child: Column(
             children: [
               BannerWidget(),
+              SizedBox(height: 10,),
               CategoriesWidget(),
             ],
           ),
