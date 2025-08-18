@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fresh_market_app/themes/theme_provider.dart';
+import 'package:fresh_market_app/widgets/UIhelper.dart';
 import 'package:provider/provider.dart';
 
 class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
@@ -12,7 +13,12 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: Provider.of<ThemeProvider>(
         context,
       ).themeData.scaffoldBackgroundColor,
-      title: const Text("Fresh Market"),
+      title: UIhelper.customTxt(
+        text: 'Fresh Market',
+        color: Colors.black,
+        fontWeight: FontWeight.normal,
+        fontsize: 24,
+      ),
       centerTitle: true,
       actions: [
         Padding(
@@ -35,12 +41,14 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Icon(Icons.location_on_outlined, size: 25),
                   SizedBox(width: 5),
-                  Text(
-                    'New York, USA',
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                  UIhelper.customTxt(
+                    text: 'New York, USA',
+                    color: Colors.black,
+                    fontWeight: FontWeight.w500,
+                    fontsize: 20,
                   ),
                 ],
               ),

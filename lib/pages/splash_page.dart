@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fresh_market_app/pages/login_page.dart';
+import 'package:fresh_market_app/widgets/UIhelper.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -25,23 +26,29 @@ class _SplashPageState extends State<SplashPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Fresh-Market', style: TextStyle(
-              fontSize: 40,
-              fontWeight: FontWeight.bold
-            ),),
+            UIhelper.customTxt(
+              text: 'Fresh-Market',
+              color: Colors.black,
+              fontWeight: FontWeight.bold,
+              fontsize: 40,
+            ),
             Hero(
               tag: 'splash-img',
-              child: Image.asset('assets/images/splash.png'),
+              child: UIhelper.customImg(img: 'splash.png'),
             ),
-            SizedBox(height: 50,),
-            Text('Grocery at your', style: TextStyle(
-              fontSize: 30,
+            SizedBox(height: 50),
+            UIhelper.customTxt(
+              text: 'Grocery at your',
+              color: Colors.black,
               fontWeight: FontWeight.bold,
-            ),),
-            Text('Doorstep', style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.w500,
-            ),),
+              fontsize: 30,
+            ),
+            UIhelper.customTxt(
+              text: 'Doorstep',
+              color: Colors.black,
+              fontWeight: FontWeight.w400,
+              fontsize: 24,
+            ),
           ],
         ),
       ),

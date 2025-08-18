@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fresh_market_app/widgets/UIhelper.dart';
 
 class BannerWidget extends StatelessWidget {
   const BannerWidget({super.key});
@@ -8,7 +9,7 @@ class BannerWidget extends StatelessWidget {
     return Container(
       height: 200,
       child: ClipRRect(
-        child: Image.asset('assets/images/banner.jpg'),
+        child: UIhelper.customImg(img: 'banner.jpg'),
         borderRadius: BorderRadiusGeometry.all(Radius.circular(15)),
       ),
     );

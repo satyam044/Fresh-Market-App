@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fresh_market_app/pages/home_page.dart';
 import 'package:fresh_market_app/themes/theme_provider.dart';
+import 'package:fresh_market_app/widgets/UIhelper.dart';
 import 'package:provider/provider.dart';
 
 class LoginPage extends StatelessWidget {
@@ -20,9 +21,11 @@ class LoginPage extends StatelessWidget {
             const SizedBox(height: 20),
             Column(
               children: [
-                Text(
-                  'Sign In',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
+                UIhelper.customTxt(
+                  text: 'Sign In',
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontsize: 40,
                 ),
                 Padding(
                   padding: const EdgeInsets.all(18.0),
@@ -51,18 +54,24 @@ class LoginPage extends StatelessWidget {
                               const EdgeInsets.symmetric(vertical: 10),
                             ),
                             backgroundColor: WidgetStateProperty.all(
-                              Provider.of<ThemeProvider>(context).themeData.primaryColor,
+                              Provider.of<ThemeProvider>(
+                                context,
+                              ).themeData.primaryColor,
                             ),
                           ),
                           onPressed: () {
-                            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomePage()));
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => HomePage(),
+                              ),
+                            );
                           },
-                          child: const Text(
-                            'Sign In',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 26,
-                            ),
+                          child: UIhelper.customTxt(
+                            text: 'Sign In',
+                            color: Colors.white,
+                            fontWeight: FontWeight.normal,
+                            fontsize: 26,
                           ),
                         ),
                       ),
@@ -77,19 +86,29 @@ class LoginPage extends StatelessWidget {
     );
   }
 
-  Widget _buildTextField(BuildContext context,
-      {required String label, required String hint, bool obscure = false}) {
+  Widget _buildTextField(
+    BuildContext context, {
+    required String label,
+    required String hint,
+    bool obscure = false,
+  }) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(label,
-            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w400)),
+        UIhelper.customTxt(
+          text: label,
+          color: Colors.black,
+          fontWeight: FontWeight.w400,
+          fontsize: 24,
+        ),
         Container(
           width: MediaQuery.of(context).size.width,
           height: 60,
           alignment: Alignment.center,
           decoration: BoxDecoration(
-            border: Border.all(color: Provider.of<ThemeProvider>(context).themeData.primaryColor),
+            border: Border.all(
+              color: Provider.of<ThemeProvider>(context).themeData.primaryColor,
+            ),
             borderRadius: BorderRadius.circular(10),
           ),
           child: TextField(

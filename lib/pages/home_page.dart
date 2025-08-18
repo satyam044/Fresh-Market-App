@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fresh_market_app/widgets/UIhelper.dart';
 import 'package:fresh_market_app/widgets/app_bar_widget.dart';
 import 'package:fresh_market_app/widgets/banner_widget.dart';
 
@@ -22,24 +23,36 @@ class HomePage extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Categories', style: TextStyle(
-                    fontSize: 24,
+                  UIhelper.customTxt(
+                    text: 'Categories',
+                    color: Colors.black,
                     fontWeight: FontWeight.bold,
-                  ),),
+                    fontsize: 24,
+                  ),
                   Row(
                     children: [
                       Column(
                         children: [
-                          Image.asset('assets/images/banner.jpg', height: 80, width: 80, fit: BoxFit.contain,),
-                          Text('Fruits'),
+                          Image.asset(
+                            'assets/images/banner.jpg',
+                            height: 80,
+                            width: 80,
+                            fit: BoxFit.contain,
+                          ),
+                          UIhelper.customTxt(
+                            text: 'Fruits',
+                            color: Colors.black,
+                            fontWeight: FontWeight.normal,
+                            fontsize: 18,
+                          ),
                         ],
-                      )
+                      ),
                     ],
-                  )
+                  ),
                 ],
-              )
+              ),
             ],
-          ) 
+          ),
         ),
       ),
     );
