@@ -11,21 +11,24 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(kToolbarHeight + 100),
-        child: AppBarWidget(),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(18.0),
-        child: Column(
-          children: [
-            BannerWidget(),
-            SizedBox(height: 10,),
-            CategoriesWidget(),
-            SizedBox(height: 10,),
-            PopularWidget(),
-          ],
-        ),
+      body: CustomScrollView(
+        slivers: [
+          StickyAppBarWidget(),
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.all(18.0),
+              child: Column(
+                children: [
+                  BannerWidget(),
+                  SizedBox(height: 10),
+                  CategoriesWidget(),
+                  SizedBox(height: 10),
+                  PopularWidget(),
+                ],
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

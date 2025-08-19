@@ -30,14 +30,14 @@ class LoginPage extends StatelessWidget {
                   child: Column(
                     children: [
                       // Name field
-                      _buildTextField(
+                      UIhelper.buildTextField(
                         context,
                         label: "Name",
                         hint: "Enter Username",
                       ),
                       const SizedBox(height: 10),
                       // Password field
-                      _buildTextField(
+                      UIhelper.buildTextField(
                         context,
                         label: "Password",
                         hint: "Enter Password",
@@ -79,48 +79,6 @@ class LoginPage extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-
-  Widget _buildTextField(
-    BuildContext context, {
-    required String label,
-    required String hint,
-    bool obscure = false,
-  }) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        UIhelper.customTxt(
-          text: label,
-          color: Colors.black,
-          fontWeight: FontWeight.w400,
-          fontsize: 24,
-        ),
-        Container(
-          width: MediaQuery.of(context).size.width,
-          height: 60,
-          alignment: Alignment.center,
-          decoration: BoxDecoration(
-            border: Border.all(
-              color: UIhelper.theme(context).primaryColor,
-            ),
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: TextField(
-            obscureText: obscure,
-            decoration: InputDecoration(
-              contentPadding: const EdgeInsets.symmetric(horizontal: 10),
-              border: InputBorder.none,
-              hintText: hint,
-              hintStyle: const TextStyle(
-                color: Color.fromARGB(192, 104, 94, 94),
-                fontSize: 20,
-              ),
-            ),
-          ),
-        ),
-      ],
     );
   }
 }

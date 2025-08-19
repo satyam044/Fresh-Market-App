@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fresh_market_app/pages/home_page.dart';
 import 'package:fresh_market_app/pages/splash_page.dart';
 import 'package:fresh_market_app/themes/theme_provider.dart';
 import 'package:fresh_market_app/widgets/UIhelper.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: UIhelper.theme(context),
-      home: SplashPage(),
+      home: HomePage(),
     );
   }
 }
