@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fresh_market_app/themes/theme_provider.dart';
 import 'package:fresh_market_app/widgets/UIhelper.dart';
-import 'package:provider/provider.dart';
 
 class CategoriesWidget extends StatelessWidget {
   CategoriesWidget({super.key});
@@ -40,7 +38,7 @@ class CategoriesWidget extends StatelessWidget {
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        color: Provider.of<ThemeProvider>(context).themeData.scaffoldBackgroundColor,
+                        color: UIhelper.theme(context).scaffoldBackgroundColor,
                       ),
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),

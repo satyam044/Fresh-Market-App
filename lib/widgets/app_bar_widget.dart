@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fresh_market_app/themes/theme_provider.dart';
 import 'package:fresh_market_app/widgets/UIhelper.dart';
-import 'package:provider/provider.dart';
 
 class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   const AppBarWidget({super.key});
@@ -10,9 +8,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       leading: const Icon(Icons.menu, size: 30),
-      backgroundColor: Provider.of<ThemeProvider>(
-        context,
-      ).themeData.scaffoldBackgroundColor,
+      backgroundColor: UIhelper.theme(context).scaffoldBackgroundColor,
       title: UIhelper.customTxt(
         text: 'Fresh Market',
         color: Colors.black,

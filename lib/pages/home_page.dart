@@ -15,18 +15,16 @@ class HomePage extends StatelessWidget {
         preferredSize: Size.fromHeight(kToolbarHeight + 100),
         child: AppBarWidget(),
       ),
-      body: Container(
-        child: Padding(
-          padding: const EdgeInsets.all(18.0),
-          child: Column(
-            children: [
-              BannerWidget(),
-              SizedBox(height: 10,),
-              CategoriesWidget(),
-              SizedBox(height: 10,),
-              PopularWidget(),
-            ],
-          ),
+      body: Padding(
+        padding: const EdgeInsets.all(18.0),
+        child: Column(
+          children: [
+            BannerWidget(),
+            SizedBox(height: 10,),
+            CategoriesWidget(),
+            SizedBox(height: 10,),
+            PopularWidget(),
+          ],
         ),
       ),
     );

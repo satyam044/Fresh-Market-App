@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fresh_market_app/themes/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 class UIhelper {
   static customImg({required String img, double? height, double? width, BoxFit? fit}) {
@@ -19,5 +21,9 @@ class UIhelper {
         fontSize: fontsize,
       ),
     );
+  }
+
+  static ThemeData theme (BuildContext context) {
+    return Provider.of<ThemeProvider>(context).themeData;
   }
 }

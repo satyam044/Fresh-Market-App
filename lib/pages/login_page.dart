@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:fresh_market_app/themes/theme_provider.dart';
 import 'package:fresh_market_app/widgets/UIhelper.dart';
 import 'package:fresh_market_app/widgets/bottom_nav_bar.dart';
-import 'package:provider/provider.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -54,9 +52,7 @@ class LoginPage extends StatelessWidget {
                               const EdgeInsets.symmetric(vertical: 10),
                             ),
                             backgroundColor: WidgetStateProperty.all(
-                              Provider.of<ThemeProvider>(
-                                context,
-                              ).themeData.primaryColor,
+                              UIhelper.theme(context).primaryColor,
                             ),
                           ),
                           onPressed: () {
@@ -107,7 +103,7 @@ class LoginPage extends StatelessWidget {
           alignment: Alignment.center,
           decoration: BoxDecoration(
             border: Border.all(
-              color: Provider.of<ThemeProvider>(context).themeData.primaryColor,
+              color: UIhelper.theme(context).primaryColor,
             ),
             borderRadius: BorderRadius.circular(10),
           ),

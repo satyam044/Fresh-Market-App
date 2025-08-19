@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fresh_market_app/pages/splash_page.dart';
 import 'package:fresh_market_app/themes/theme_provider.dart';
+import 'package:fresh_market_app/widgets/UIhelper.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: Provider.of<ThemeProvider>(context).themeData,
+      theme: UIhelper.theme(context),
       home: SplashPage(),
     );
   }
