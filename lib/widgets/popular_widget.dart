@@ -28,38 +28,45 @@ class PopularWidget extends StatelessWidget {
           physics: NeverScrollableScrollPhysics(),
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
+            childAspectRatio: 0.75,
           ),
           itemCount: popularItems.length,
           itemBuilder: (context, index) {
             final item = popularItems[index];
-            return Column(
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
-                    color: UIhelper.theme(context).scaffoldBackgroundColor,
-                  ),
-                  child: Padding(
-                    padding: EdgeInsets.all(10),
-                    child: UIhelper.customImg(
-                      img: item['img']!,
-                      height: 150,
-                      width: 100,
-                      fit: BoxFit.contain,
+            return GestureDetector(
+              onTap: () {
+                print(item);
+              },
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10),
+                child: Column(
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(20),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: UIhelper.theme(context).scaffoldBackgroundColor,
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.all(10),
+                        child: UIhelper.customImg(
+                          img: item['img']!,
+                          height: 150,
+                        ),
+                      ),
                     ),
-                  ),
+                    UIhelper.customTxt(
+                      text: item['text']!,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w400,
+                      fontsize: 24,
+                    ),
+                  ],
                 ),
-                UIhelper.customTxt(
-                  text: item['text']!,
-                  color: Colors.black,
-                  fontWeight: FontWeight.w400,
-                  fontsize: 24,
-                ),
-              ],
+              ),
             );
           },
         ),
-        const SizedBox(height: 4),
       ],
     );
   }
