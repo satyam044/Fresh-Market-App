@@ -1,0 +1,162 @@
+[
+    {
+        "id": "1",
+        "name": "Fresh Apples",
+        "image": "fruits.png",
+        "price": 2.99,
+        "description": "Crisp and sweet apples, freshly picked.",
+        "category": "Fruits"
+    },
+    {
+        "id": "2",
+        "name": "Organic Carrots",
+        "image": "veggies.png",
+        "price": 1.99,
+        "description": "Crunchy organic carrots from local farms.",
+        "category": "Veggies"
+    },
+    {
+        "id": "3",
+        "name": "Bananas",
+        "image": "bananas.png",
+        "price": 1.49,
+        "description": "Ripe bananas full of potassium and flavor.",
+        "category": "Fruits"
+    },
+    {
+        "id": "4",
+        "name": "Broccoli",
+        "image": "broccoli.png",
+        "price": 2.50,
+        "description": "Fresh, green broccoli florets packed with nutrients.",
+        "category": "Veggies"
+    },
+    {
+        "id": "5",
+        "name": "Chicken Breast",
+        "image": "chicken.png",
+        "price": 5.99,
+        "description": "Boneless, skinless chicken breasts — great for grilling.",
+        "category": "Meat"
+    },
+    {
+        "id": "6",
+        "name": "Ground Beef",
+        "image": "beef.png",
+        "price": 6.49,
+        "description": "Lean ground beef perfect for burgers or tacos.",
+        "category": "Meat"
+    },
+    {
+        "id": "7",
+        "name": "Sourdough Bread",
+        "image": "sourdough.png",
+        "price": 3.50,
+        "description": "Artisan sourdough with a crispy crust and soft interior.",
+        "category": "Bakery"
+    },
+    {
+        "id": "8",
+        "name": "Croissants",
+        "image": "croissants.png",
+        "price": 4.25,
+        "description": "Buttery croissants baked fresh daily.",
+        "category": "Bakery"
+    },
+    {
+        "id": "9",
+        "name": "Milk - 1 Gallon",
+        "image": "milk.png",
+        "price": 3.29,
+        "description": "Fresh whole milk from local dairies.",
+        "category": "Dairy"
+    },
+    {
+        "id": "10",
+        "name": "Cheddar Cheese",
+        "image": "cheddar.png",
+        "price": 4.75,
+        "description": "Sharp aged cheddar in block form.",
+        "category": "Dairy"
+    },
+    {
+        "id": "11",
+        "name": "Strawberries",
+        "image": "strawberries.png",
+        "price": 3.99,
+        "description": "Sweet and juicy strawberries.",
+        "category": "Fruits"
+    },
+    {
+        "id": "12",
+        "name": "Spinach",
+        "image": "spinach.png",
+        "price": 2.25,
+        "description": "Fresh baby spinach leaves, great for salads.",
+        "category": "Veggies"
+    },
+    {
+        "id": "13",
+        "name": "Pork Chops",
+        "image": "porkchops.png",
+        "price": 6.99,
+        "description": "Tender pork chops, great for pan-searing.",
+        "category": "Meat"
+    },
+    {
+        "id": "14",
+        "name": "Beef Steak",
+        "image": "steak.png",
+        "price": 9.99,
+        "description": "Premium beef steak, ready for the grill.",
+        "category": "Meat"
+    },
+    {
+        "id": "15",
+        "name": "Whole Wheat Bread",
+        "image": "wholewheat.png",
+        "price": 2.99,
+        "description": "Nutritious whole wheat sandwich bread.",
+        "category": "Bakery"
+    },
+    {
+        "id": "16",
+        "name": "Muffins",
+        "image": "muffins.png",
+        "price": 3.75,
+        "description": "Soft blueberry muffins, perfect for breakfast.",
+        "category": "Bakery"
+    },
+    {
+        "id": "17",
+        "name": "Yogurt - Strawberry",
+        "image": "yogurt.png",
+        "price": 1.25,
+        "description": "Creamy strawberry-flavored yogurt cup.",
+        "category": "Dairy"
+    },
+    {
+        "id": "18",
+        "name": "Butter - Salted",
+        "image": "butter.png",
+        "price": 2.89,
+        "description": "Rich salted butter, ideal for cooking and baking.",
+        "category": "Dairy"
+    },
+    {
+        "id": "19",
+        "name": "Oranges",
+        "image": "oranges.png",
+        "price": 2.75,
+        "description": "Juicy and vitamin-rich oranges.",
+        "category": "Fruits"
+    },
+    {
+        "id": "20",
+        "name": "Cucumbers",
+        "image": "cucumbers.png",
+        "price": 1.49,
+        "description": "Cool, crisp cucumbers — perfect for salads.",
+        "category": "Veggies"
+    }
+]
