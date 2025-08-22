@@ -2,7 +2,7 @@
     {
         "id": "1",
         "name": "Fresh Apples",
-        "image": "fruits.png",
+        "image": "apple.png",
         "price": 2.99,
         "description": "Crisp and sweet apples, freshly picked.",
         "category": "Fruits"
@@ -10,7 +10,7 @@
     {
         "id": "2",
         "name": "Organic Carrots",
-        "image": "veggies.png",
+        "image": "carrot.png",
         "price": 1.99,
         "description": "Crunchy organic carrots from local farms.",
         "category": "Veggies"
@@ -118,45 +118,5 @@
         "price": 2.99,
         "description": "Nutritious whole wheat sandwich bread.",
         "category": "Bakery"
-    },
-    {
-        "id": "16",
-        "name": "Muffins",
-        "image": "muffins.png",
-        "price": 3.75,
-        "description": "Soft blueberry muffins, perfect for breakfast.",
-        "category": "Bakery"
-    },
-    {
-        "id": "17",
-        "name": "Yogurt - Strawberry",
-        "image": "yogurt.png",
-        "price": 1.25,
-        "description": "Creamy strawberry-flavored yogurt cup.",
-        "category": "Dairy"
-    },
-    {
-        "id": "18",
-        "name": "Butter - Salted",
-        "image": "butter.png",
-        "price": 2.89,
-        "description": "Rich salted butter, ideal for cooking and baking.",
-        "category": "Dairy"
-    },
-    {
-        "id": "19",
-        "name": "Oranges",
-        "image": "oranges.png",
-        "price": 2.75,
-        "description": "Juicy and vitamin-rich oranges.",
-        "category": "Fruits"
-    },
-    {
-        "id": "20",
-        "name": "Cucumbers",
-        "image": "cucumbers.png",
-        "price": 1.49,
-        "description": "Cool, crisp cucumbers — perfect for salads.",
-        "category": "Veggies"
     }
 ]

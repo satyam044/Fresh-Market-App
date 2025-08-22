@@ -36,7 +36,7 @@ class PopularWidget extends StatelessWidget {
               physics: NeverScrollableScrollPhysics(),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                childAspectRatio: 1,
+                childAspectRatio: 0.7,
               ),
               itemCount: popularItems.length,
               itemBuilder: (context, index) {
