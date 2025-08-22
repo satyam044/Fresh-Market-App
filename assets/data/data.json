@@ -3,120 +3,120 @@
         "id": "1",
         "name": "Fresh Apples",
         "image": "apple.png",
-        "price": 2.99,
-        "description": "Crisp and sweet apples, freshly picked.",
+        "price": 248.17,
+        "description": "Crisp and sweet apples, freshly picked from orchards, perfect for snacking, baking, or juicing. These apples are rich in fiber and antioxidants, offering a deliciously healthy treat for the entire family.",
         "category": "Fruits"
     },
     {
         "id": "2",
         "name": "Organic Carrots",
         "image": "carrot.png",
-        "price": 1.99,
-        "description": "Crunchy organic carrots from local farms.",
+        "price": 165.17,
+        "description": "Crunchy organic carrots sourced from trusted local farms, grown without the use of synthetic fertilizers or pesticides. Ideal for salads, cooking, or healthy snacking, they offer a burst of natural flavor and essential nutrients.",
         "category": "Veggies"
     },
     {
         "id": "3",
         "name": "Bananas",
         "image": "bananas.png",
-        "price": 1.49,
-        "description": "Ripe bananas full of potassium and flavor.",
+        "price": 123.67,
+        "description": "Ripe bananas full of potassium and flavor, great for a quick energy boost. These naturally sweet fruits are perfect for smoothies, baking, or as a satisfying snack at any time of the day.",
         "category": "Fruits"
     },
     {
         "id": "4",
         "name": "Broccoli",
         "image": "broccoli.png",
-        "price": 2.50,
-        "description": "Fresh, green broccoli florets packed with nutrients.",
+        "price": 207.5,
+        "description": "Fresh, green broccoli florets packed with nutrients, including vitamins C and K. A versatile vegetable that can be steamed, stir-fried, or roasted, adding vibrant color and crunch to your meals.",
         "category": "Veggies"
     },
     {
         "id": "5",
         "name": "Chicken Breast",
         "image": "chicken.png",
-        "price": 5.99,
-        "description": "Boneless, skinless chicken breasts — great for grilling.",
+        "price": 497.17,
+        "description": "Boneless, skinless chicken breasts — lean, high in protein, and ideal for grilling, baking, or sautéing. A healthy staple that’s easy to cook and incredibly versatile for any recipe.",
         "category": "Meat"
     },
     {
         "id": "6",
         "name": "Ground Beef",
         "image": "beef.png",
-        "price": 6.49,
-        "description": "Lean ground beef perfect for burgers or tacos.",
+        "price": 538.67,
+        "description": "Lean ground beef perfect for burgers, tacos, meatballs, and sauces. Packed with flavor and protein, it's a go-to choice for hearty, satisfying meals any day of the week.",
         "category": "Meat"
     },
     {
         "id": "7",
         "name": "Sourdough Bread",
         "image": "sourdough.png",
-        "price": 3.50,
-        "description": "Artisan sourdough with a crispy crust and soft interior.",
+        "price": 290.5,
+        "description": "Artisan sourdough with a crispy golden crust and soft, tangy interior. Naturally fermented for enhanced flavor and digestibility, it’s excellent for sandwiches or toasting with your favorite spread.",
         "category": "Bakery"
     },
     {
         "id": "8",
         "name": "Croissants",
         "image": "croissants.png",
-        "price": 4.25,
-        "description": "Buttery croissants baked fresh daily.",
+        "price": 352.75,
+        "description": "Buttery croissants baked fresh daily, featuring delicate layers and a flaky, golden finish. Enjoy them plain, with jam, or filled for a luxurious breakfast or snack.",
         "category": "Bakery"
     },
     {
         "id": "9",
         "name": "Milk - 1 Gallon",
         "image": "milk.png",
-        "price": 3.29,
-        "description": "Fresh whole milk from local dairies.",
+        "price": 273.07,
+        "description": "Fresh whole milk from local dairies, rich in calcium and essential nutrients. Perfect for drinking, cooking, or adding to tea, coffee, and cereals.",
         "category": "Dairy"
     },
     {
         "id": "10",
         "name": "Cheddar Cheese",
         "image": "cheddar.png",
-        "price": 4.75,
-        "description": "Sharp aged cheddar in block form.",
+        "price": 394.25,
+        "description": "Sharp aged cheddar in block form, offering a bold and tangy flavor. Great for slicing, grating, or melting into your favorite dishes like mac & cheese or sandwiches.",
         "category": "Dairy"
     },
     {
         "id": "11",
         "name": "Strawberries",
         "image": "strawberries.png",
-        "price": 3.99,
-        "description": "Sweet and juicy strawberries.",
+        "price": 331.17,
+        "description": "Sweet and juicy strawberries, bursting with natural flavor. Perfect for desserts, salads, or smoothies, these berries are rich in antioxidants and vitamin C.",
         "category": "Fruits"
     },
     {
         "id": "12",
         "name": "Spinach",
         "image": "spinach.png",
-        "price": 2.25,
-        "description": "Fresh baby spinach leaves, great for salads.",
+        "price": 186.75,
+        "description": "Fresh baby spinach leaves, tender and full of nutrients. A great source of iron and fiber, ideal for salads, sautéed dishes, smoothies, or soups.",
         "category": "Veggies"
     },
     {
         "id": "13",
         "name": "Pork Chops",
         "image": "porkchops.png",
-        "price": 6.99,
-        "description": "Tender pork chops, great for pan-searing.",
+        "price": 580.17,
+        "description": "Tender pork chops, perfect for pan-searing, grilling, or baking. A flavorful cut that cooks up juicy and delicious with minimal effort.",
         "category": "Meat"
     },
     {
         "id": "14",
         "name": "Beef Steak",
         "image": "steak.png",
-        "price": 9.99,
-        "description": "Premium beef steak, ready for the grill.",
+        "price": 829.17,
+        "description": "Premium beef steak, ready for the grill or stovetop. Marbled for tenderness and flavor, this cut is a favorite among meat lovers looking for a satisfying meal.",
         "category": "Meat"
     },
     {
         "id": "15",
         "name": "Whole Wheat Bread",
         "image": "wholewheat.png",
-        "price": 2.99,
-        "description": "Nutritious whole wheat sandwich bread.",
+        "price": 248.17,
+        "description": "Nutritious whole wheat sandwich bread, rich in fiber and essential nutrients. Ideal for healthy sandwiches, toast, or accompanying your meals.",
         "category": "Bakery"
     }
 ]
